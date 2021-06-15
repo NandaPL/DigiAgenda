@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    background: #4B0082;
+}
+
+main {
+    background-color: white;
+    margin: 10px 10%;
+    padding: 10px 25px;
+}
+
+main img {
+    width: 100%;
+}
+
+/*Estilo da tabela*/
+/* DivTable.com */
+.divTable {
+    display: table;
+    width: 100%;
+}
+.divTableRow {
+    display: table-row;
+}
+.divTableHeading {
+    background-color: #eee;
+    display: table-header-group;
+}
+.divTableCell,
+.divTableHead {
+    border: 1px solid #999999;
+    display: table-cell;
+    padding: 3px 10px;
+}
+
+.divTableHeading {
+    background-color: #eee;
+    display: table-header-group;
+    font-weight: bold;
+}
+
+body .documentacao #nav {
+    padding: 10px;
+    list-style: none;
+}
+
+body .documentacao #nav{
+    display: inline;
+    font-size: 1rem;
+}
+
+body .documentacao #nav .breadcrumb-item + .breadcrumb-item:before {
+    padding: 5px;
+    color: black;
+    content: "/\00a0";
+}
+
+body .documentacao #nav .breadcrumb-item a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+body .documentacao #nav .breadcrumb-item a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 425px) {
+    main {
+        background-color: white;
+        margin: 0;
+        padding: 10px 25px;
+    }
+
+    .table-resposive {
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
+
+h2{
+    font-style: oblique;
+}
+
+body .documentacao .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
