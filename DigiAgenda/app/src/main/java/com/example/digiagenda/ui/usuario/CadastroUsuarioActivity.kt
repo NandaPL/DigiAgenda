@@ -6,13 +6,28 @@ import android.os.Bundle
 import com.example.digiagenda.R
 
 class CadastroUsuarioActivity : AppCompatActivity() {
+    private lateinit var email: String
+    private lateinit var senha: String
+    private lateinit var confSenha: String
+    private lateinit var nome: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_usuario)
 
-        supportActionBar?.setDisplayShowCustomEnabled(true)
-
         val colorDrawable = ColorDrawable(getColor(R.color.topBar_color))
-        supportActionBar?.setBackgroundDrawable(colorDrawable)
+
+        supportActionBar?.let {
+            it.setDisplayShowCustomEnabled(true)
+            it.setBackgroundDrawable(colorDrawable)
+        }
+
+
+
+
+    }
+
+    override fun onBackPressed() {
+        finish()
     }
 }
