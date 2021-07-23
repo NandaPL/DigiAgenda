@@ -7,13 +7,34 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_eventos"
+        android:layout_width="0dp"
+        tools:itemCount="3"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_evento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/adiciona_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/menu_navegacao"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_main"
+        app:headerLayout="@layout/menu_lateral_header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/menu" />

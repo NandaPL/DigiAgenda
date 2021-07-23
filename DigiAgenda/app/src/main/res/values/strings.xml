@@ -22,4 +22,6 @@
     <string name="default_username">NOME USUÁRIO</string>
     <string name="PREF_USER_DATA">USUARIO</string>
     <string name="PREF_USER_FIRST_USE">PRIMEIRO_USO</string>
+    <string name="titulo_placeholder">Reunião de Sprint 1</string>
+    <string name="data_placeholder">16/06/2021</string>
 </resources>
