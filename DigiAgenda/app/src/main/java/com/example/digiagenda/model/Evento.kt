@@ -3,7 +3,7 @@ package com.example.digiagenda.model
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.digiagenda.repository.sql.*
+import com.example.digiagenda.repository.room.*
 import java.time.LocalDate
 import java.time.LocalTime
 

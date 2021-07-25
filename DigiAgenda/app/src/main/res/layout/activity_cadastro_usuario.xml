@@ -10,8 +10,8 @@
         android:id="@+id/tvInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
         android:text="@string/informe_os_dados"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -24,17 +24,19 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tvInfo"
         app:layout_constraintTop_toBottomOf="@id/tvInfo">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cadastro_nome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
 
             <EditText
                 android:layout_width="match_parent"
@@ -47,8 +49,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/cadastro_email"
             android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+            app:errorEnabled="true">
 
             <EditText
                 android:layout_width="match_parent"
@@ -62,9 +65,10 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/cadastro_senha"
             android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:endIconMode="password_toggle">
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true">
 
             <EditText
                 android:layout_width="match_parent"
@@ -76,10 +80,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmar_senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:endIconMode="password_toggle">
+            android:layout_marginTop="4dp"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true">
 
             <EditText
                 android:layout_width="match_parent"
@@ -95,13 +101,10 @@
         android:id="@+id/button_cadastrar"
         android:layout_width="255dp"
         android:layout_height="56dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/cadastrar"
+        android:layout_marginTop="54dp"
         android:backgroundTint="@color/app_color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
