@@ -4,31 +4,23 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
-import android.view.View
 import android.widget.TextView
-import android.widget.Toolbar
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.*
-import androidx.navigation.NavAction
 import androidx.navigation.findNavController
 import androidx.navigation.ui.*
 import com.example.digiagenda.R
-import com.example.digiagenda.model.Usuario
 import com.example.digiagenda.ui.cadastro_evento.CadastrarEventoActivity
-import com.example.digiagenda.ui.menu.ConvitesActivity
-import com.example.digiagenda.ui.menu.EventosMesActivity
+import com.example.digiagenda.ui.cadastro_evento.VisualizarEventoActivity
+import com.example.digiagenda.ui.cadastro_evento.EventoAdapter
 import com.example.digiagenda.ui.menu.MinhasInformacoesActivity
 import com.example.digiagenda.ui.usuario.LoginActivity
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*
-import kotlinx.android.synthetic.main.menu_lateral_header.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -57,6 +49,14 @@ class HomeActivity : AppCompatActivity() {
 
         observer()
 
+        val lista = mutableListOf<String>("Fazer compras do mês", "Reunião de equipe", "Prova")
+        recycler_eventos.adapter = EventoAdapter(this, lista, ::onItemClick)
+
+
+    }
+
+    private fun onItemClick(evento: String) {
+        startActivity(Intent(this, VisualizarEventoActivity::class.java))
     }
 
     override fun onResume() {

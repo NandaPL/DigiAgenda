@@ -19,36 +19,141 @@
         app:layout_constraintTop_toTopOf="parent"
         android:inputType="text" />
 
+    <EditText
+        android:id="@+id/edt_hora_alarme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="10"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_notification"
+        app:layout_constraintStart_toEndOf="@+id/ic_notification"
+        app:layout_constraintTop_toTopOf="@+id/ic_notification" />
+
+    <EditText
+        android:id="@+id/edt_descricao_evento"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/textview_layout_cadastrar_evento"
+        android:hint="@string/descricao"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/salvar_evento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
-        android:id="@+id/tv_data_evento"
+        android:id="@+id/tv_data_evento2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
         android:text="@string/data"
-        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="@+id/titulo_evento"
         app:layout_constraintTop_toBottomOf="@+id/titulo_evento" />
 
     <TextView
-        android:id="@+id/tv_hora_evento"
+        android:id="@+id/tv_icon_calendar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_app_icon"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_valor_data"
+        app:layout_constraintStart_toEndOf="@+id/tv_valor_data"
+        app:layout_constraintTop_toTopOf="@+id/tv_valor_data" />
+
+    <TextView
+        android:id="@+id/tv_valor_data"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_layout_cadastrar_evento"
+        android:text="26/07/2021"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_data_evento2"
+        app:layout_constraintStart_toEndOf="@+id/tv_data_evento2"
+        app:layout_constraintTop_toTopOf="@+id/tv_data_evento2" />
+
+    <TextView
+        android:id="@+id/tv_convidados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/textview_layout_cadastrar_evento"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:text="0 pessoas"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_adicionar_convidadp"
+        app:layout_constraintEnd_toStartOf="@+id/ic_adicionar_convidadp"
+        app:layout_constraintTop_toTopOf="@+id/ic_adicionar_convidadp" />
+
+    <TextView
+        android:id="@+id/ic_adicionar_convidadp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_baseline_person_add_alt_1_24"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_descricao_evento"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/ic_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_notifications_24"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/ic_delete_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_delete_24"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/tv_valor_hora"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_layout_cadastrar_evento"
+        android:text="21:25"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_hora_evento3"
+        app:layout_constraintStart_toStartOf="@+id/tv_valor_data"
+        app:layout_constraintTop_toTopOf="@+id/tv_hora_evento3" />
+
+
+    <TextView
+        android:id="@+id/tv_hora_evento3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hora"
-        android:layout_marginTop="16dp"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_data_evento"
-        app:layout_constraintTop_toBottomOf="@+id/tv_data_evento" />
-
-
-    <View
-        android:id="@+id/view_date"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="108dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_hora_evento" />
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_data_evento2"
+        app:layout_constraintStart_toStartOf="@+id/tv_data_evento2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_data_evento2" />
 
     <Button
         android:id="@+id/salvar_evento"
@@ -56,12 +161,32 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/app_color"
         android:text="@string/salvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_hora_alarme"
+        app:layout_constraintStart_toEndOf="@+id/edt_hora_alarme"
+        app:layout_constraintTop_toTopOf="@+id/edt_hora_alarme" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Defina uma alarme para receber notificações antes da reunião começar"
+        app:layout_constraintEnd_toEndOf="@+id/titulo_evento"
+        app:layout_constraintStart_toStartOf="@+id/titulo_evento"
+        app:layout_constraintTop_toBottomOf="@+id/tv_valor_hora" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
