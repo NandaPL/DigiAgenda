@@ -19,6 +19,7 @@ import com.example.digiagenda.repository.room.converters.*
 )
 abstract class AgendaDatabase : RoomDatabase() {
     abstract fun usuarioDao(): UsuarioDao
+    abstract fun eventoDao(): EventoDao
 
     companion object {
         private var instance: AgendaDatabase? = null

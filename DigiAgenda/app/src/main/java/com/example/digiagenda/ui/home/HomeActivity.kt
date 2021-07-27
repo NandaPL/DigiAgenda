@@ -29,6 +29,7 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*
 import kotlinx.android.synthetic.main.menu_lateral_header.*
+import org.jetbrains.anko.doAsync
 
 class HomeActivity : AppCompatActivity() {
 
@@ -36,6 +37,8 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var homeViewModel: HomeViewModel
 
     private var usuarioEmail: String? = null
+
+    private lateinit var usuario: Usuario
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -128,11 +131,16 @@ class HomeActivity : AppCompatActivity() {
     private fun observer(){
         usuarioEmail?.let {
             homeViewModel.getUsuarioByEmail(it).observe(this, {
-                val header = menu_navegacao.getHeaderView(0)
+                usuario = it
+                doAsync {
+                    val navView = findViewById<NavigationView>(R.id.menu_navegacao)
+                    val header = navView.getHeaderView(0)
+                    header.findViewById<TextView>(R.id.name_user).text = usuario.nome
+                }
 
-                header.findViewById<TextView>(R.id.name_user).text = it.nome
             })
         }
+
     }
 
 }
