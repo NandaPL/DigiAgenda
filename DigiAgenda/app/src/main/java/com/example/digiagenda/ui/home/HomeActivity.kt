@@ -101,7 +101,15 @@ class HomeActivity : AppCompatActivity() {
                 alertDialog.show()
             } else {
                 NavigationUI.onNavDestinationSelected(it, navController)
-                drawerLayout.closeDrawer(GravityCompat.START);
+                drawerLayout.closeDrawer(GravityCompat.START)
+            }
+
+            if (it.itemId == R.id.ic_informacoes){
+                startActivity(Intent(this, MinhasInformacoesActivity::class.java))
+                finish()
+            } else {
+                NavigationUI.onNavDestinationSelected(it, navController)
+                drawerLayout.closeDrawer(GravityCompat.START)
             }
             true
         }
