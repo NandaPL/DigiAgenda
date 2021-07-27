@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.digiagenda">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DigiAgenda">
+        <activity android:name=".ui.menu.EventosMesActivity"/>
+        <activity android:name=".ui.menu.ConvitesActivity" />
+        <activity android:name=".ui.menu.MinhasInformacoesActivity" />
+        <activity
+            android:name=".ui.splashs.SplashEntradaActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.home.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.splashs.SplashSucessoActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".ui.usuario.LoginActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".ui.usuario.CadastroUsuarioActivity"
+            android:parentActivityName=".ui.usuario.LoginActivity" />
+        <activity android:name=".ui.cadastro_evento.CadastrarEventoActivity" />
+    </application>
+
+</manifest>

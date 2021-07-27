@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DigiAgenda</string>
+    <string name="titulo">Título</string>
+    <string name="data">Data:</string>
+    <string name="hora">Hora:</string>
+    <string name="salvar">Salvar</string>
+    <string name="descricao">Descrição</string>
+    <string name="informe_os_dados">Informe os dados</string>
+    <string name="nome">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="confirmar_senha">Confirmar Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="login">Login</string>
+    <string name="esqueceu_sua_senha"><u>Esqueceu sua senha?</u></string>
+    <string name="mensagem_cadastro"><u>Ainda não cadastrado? Cadastre-se</u></string>
+    <string name="cadastro_concluido">Cadastro Concluído!</string>
+    <string name="minhas_informacoes">Minhas Informações</string>
+    <string name="eventos_do_mes">Eventos do Mês</string>
+    <string name="convites">Convites</string>
+    <string name="sair">Sair</string>
+    <string name="default_username">NOME USUÁRIO</string>
+    <string name="PREF_USER_DATA">USUARIO</string>
+    <string name="PREF_USER_FIRST_USE">PRIMEIRO_USO</string>
+    <string name="titulo_placeholder">Reunião de Sprint 1</string>
+    <string name="data_placeholder">16/06/2021</string>
+    <string name="cadastar_usuario">Cadastrar Usuário</string>
+    <string name="nao">Não</string>
+    <string name="sim">Sim</string>
+    <string name="extra_email">EXTRA_EMAIL</string>
+    <string name="PREF_USER_EMAIL">EMAIL_USUARIO</string>
+    <string name="abrir">Abrir</string>
+    <string name="fechar">Fechar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eventos">Eventos</string>
+</resources>
