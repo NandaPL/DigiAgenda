@@ -1,0 +1,94 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.digiagenda"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:5:5-36:19
+12        android:allowBackup="true"
+12-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.5.0] C:\Users\fplsn\.gradle\caches\transforms-2\files-2.1\a8a215842fd804a2febd4ee3cbb8e21c\core-1.5.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/Theme.DigiAgenda" >
+21-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:11:9-48
+22        <activity android:name="com.example.digiagenda.ui.menu.EventosMesActivity" />
+22-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:12:9-63
+22-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:12:19-61
+23        <activity android:name="com.example.digiagenda.ui.menu.ConvitesActivity" />
+23-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:13:9-62
+23-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:13:19-59
+24        <activity android:name="com.example.digiagenda.ui.menu.MinhasInformacoesActivity" />
+24-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:14:9-71
+24-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:14:19-68
+25        <activity
+25-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:15:9-23:20
+26            android:name="com.example.digiagenda.ui.splashs.SplashEntradaActivity"
+26-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:16:13-61
+27            android:theme="@style/NoActionBar" >
+27-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:17:13-47
+28            <intent-filter>
+28-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:18:13-22:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:19:17-69
+29-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:19:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:21:17-77
+31-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:21:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:24:9-25:58
+35            android:name="com.example.digiagenda.ui.home.HomeActivity"
+35-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:24:19-55
+36            android:theme="@style/AppTheme.NoActionBar" />
+36-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:25:13-56
+37        <activity
+37-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:26:9-28:81
+38            android:name="com.example.digiagenda.ui.splashs.SplashSucessoActivity"
+38-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:27:13-61
+39            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+39-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:28:13-78
+40        <activity
+40-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:29:9-31:81
+41            android:name="com.example.digiagenda.ui.usuario.LoginActivity"
+41-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:30:13-53
+42            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+42-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:31:13-78
+43        <activity
+43-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:32:9-34:70
+44            android:name="com.example.digiagenda.ui.usuario.CadastroUsuarioActivity"
+44-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:33:13-63
+45            android:parentActivityName="com.example.digiagenda.ui.usuario.LoginActivity" />
+45-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:34:13-67
+46        <activity android:name="com.example.digiagenda.ui.cadastro_evento.CadastrarEventoActivity" />
+46-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:35:9-80
+46-->C:\Users\fplsn\OneDrive\Documentos\GitHub\DigiAgenda\DigiAgenda\app\src\main\AndroidManifest.xml:35:19-77
+47
+48        <service
+48-->[androidx.room:room-runtime:2.2.0-beta01] C:\Users\fplsn\.gradle\caches\transforms-2\files-2.1\84aafeed470254c27dc6496c68697f6c\room-runtime-2.2.0-beta01\AndroidManifest.xml:25:9-27:40
+49            android:name="androidx.room.MultiInstanceInvalidationService"
+49-->[androidx.room:room-runtime:2.2.0-beta01] C:\Users\fplsn\.gradle\caches\transforms-2\files-2.1\84aafeed470254c27dc6496c68697f6c\room-runtime-2.2.0-beta01\AndroidManifest.xml:26:13-74
+50            android:exported="false" />
+50-->[androidx.room:room-runtime:2.2.0-beta01] C:\Users\fplsn\.gradle\caches\transforms-2\files-2.1\84aafeed470254c27dc6496c68697f6c\room-runtime-2.2.0-beta01\AndroidManifest.xml:27:13-37
+51    </application>
+52
+53</manifest>

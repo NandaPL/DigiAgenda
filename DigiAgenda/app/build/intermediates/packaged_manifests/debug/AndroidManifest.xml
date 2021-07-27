@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.digiagenda"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="29" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.DigiAgenda" >
+        <activity android:name="com.example.digiagenda.ui.menu.EventosMesActivity" />
+        <activity android:name="com.example.digiagenda.ui.menu.ConvitesActivity" />
+        <activity android:name="com.example.digiagenda.ui.menu.MinhasInformacoesActivity" />
+        <activity
+            android:name="com.example.digiagenda.ui.splashs.SplashEntradaActivity"
+            android:theme="@style/NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.digiagenda.ui.home.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.digiagenda.ui.splashs.SplashSucessoActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name="com.example.digiagenda.ui.usuario.LoginActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name="com.example.digiagenda.ui.usuario.CadastroUsuarioActivity"
+            android:parentActivityName="com.example.digiagenda.ui.usuario.LoginActivity" />
+        <activity android:name="com.example.digiagenda.ui.cadastro_evento.CadastrarEventoActivity" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false" />
+    </application>
+
+</manifest>

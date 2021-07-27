@@ -1,0 +1,13 @@
+com/example/digiagenda/BuildConfig.java
+ com.example.digiagenda.BuildConfig
+com/example/digiagenda/repository/room/AgendaDatabase_Impl.java
+ com.example.digiagenda.repository.room.AgendaDatabase_Impl
+ com.example.digiagenda.repository.room.AgendaDatabase_Impl$1
+com/example/digiagenda/repository/dao/UsuarioDao_Impl.java
+ com.example.digiagenda.repository.dao.UsuarioDao_Impl
+ com.example.digiagenda.repository.dao.UsuarioDao_Impl$1
+ com.example.digiagenda.repository.dao.UsuarioDao_Impl$2
+ com.example.digiagenda.repository.dao.UsuarioDao_Impl$3
+ com.example.digiagenda.repository.dao.UsuarioDao_Impl$4
+ com.example.digiagenda.repository.dao.UsuarioDao_Impl$5
+ com.example.digiagenda.repository.dao.UsuarioDao_Impl$6
