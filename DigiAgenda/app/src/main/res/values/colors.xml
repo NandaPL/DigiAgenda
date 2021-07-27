@@ -10,4 +10,6 @@
     <color name="app_color">#00877C</color>
     <color name="gray">#272626</color>
     <color name="topBar_color">#460097</color>
+    <color name="colorPrimary">#6462a3</color>
+    <color name="colorPrimaryDark">#3b3a61</color>
 </resources>

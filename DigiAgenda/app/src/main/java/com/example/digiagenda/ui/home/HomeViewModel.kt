@@ -8,6 +8,6 @@ import com.example.digiagenda.repository.room.UsuarioRepository
 
 class HomeViewModel(application: Application) : AndroidViewModel(application){
     private val usuarioRepository = UsuarioRepository(AgendaDatabase.getDatabase(application))
-    
+
 
 }

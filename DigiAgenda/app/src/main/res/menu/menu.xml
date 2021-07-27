@@ -7,10 +7,13 @@
 <group
     android:checkableBehavior="single">
         <item
+            android:id="@+id/ic_eventos"
+            android:title="@string/eventos"/>
+        <item
             android:id="@+id/ic_informacoes"
             android:title="@string/minhas_informacoes"/>
         <item
-            android:id="@+id/ic_eventos"
+            android:id="@+id/ic_eventos_mes"
             android:title="@string/eventos_do_mes"/>
         <item
             android:id="@+id/ic_convites"
