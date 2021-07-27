@@ -9,4 +9,11 @@ import com.example.digiagenda.repository.room.*
 interface UsuarioDao: BaseDao<Usuario> {
     @Query("""SELECT * FROM $TABLE_USUARIO WHERE $COLUMN_EMAIL = :email""")
     fun usuarioByEmail(email: String): LiveData<Usuario>
+
+    @Query("""SELECT * FROM $TABLE_USUARIO WHERE $COLUMN_EMAIL = :email AND $COLUMN_SENHA_OBFUSCATED = :senha""")
+    fun usuarioByEmailESenha(email: String, senha: String): LiveData<Usuario>
+
+    @Query("""SELECT * FROM $TABLE_USUARIO WHERE $COLUMN_USUARIO_ID = :id""")
+    fun getUsuarioById(id: Long): LiveData<Usuario>
+
 }

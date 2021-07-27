@@ -15,6 +15,7 @@ import com.example.digiagenda.ui.*
 import com.example.digiagenda.ui.splashs.SplashSucessoActivity
 import kotlinx.android.synthetic.main.activity_cadastro_usuario.*
 import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.uiThread
 
 class CadastroUsuarioActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var email: String
@@ -53,11 +54,6 @@ class CadastroUsuarioActivity : AppCompatActivity(), View.OnClickListener {
             email = cadastro_email.editText?.text.toString()
             senha = cadastro_senha.editText?.text.toString()
 
-            val userPrefs =
-                getSharedPreferences(getString(R.string.PREF_USER_DATA), Context.MODE_PRIVATE)
-
-            val editor = userPrefs.edit()
-                .putBoolean(getString(R.string.PREF_USER_FIRST_USE), false)
 
             cadastroUsuarioViewModel.verificaUsuario(email).observe(mContext, { usuario ->
                 if (usuario == null){
@@ -67,13 +63,17 @@ class CadastroUsuarioActivity : AppCompatActivity(), View.OnClickListener {
                         senhaObfuscated = senha
                     )
 
-                    val intent = Intent(this, SplashSucessoActivity::class.java)
-                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    val userPrefs =
+                        getSharedPreferences(getString(R.string.PREF_USER_DATA), Context.MODE_PRIVATE)
+
+                    val editor = userPrefs.edit()
+                    editor.putBoolean(getString(R.string.PREF_USER_FIRST_USE), false)
+                    editor.apply()
 
                     doAsync {
                         cadastroUsuarioViewModel.criarUsuario(user)
-                        startActivity(intent)
+
+                        startActivity(Intent(mContext, SplashSucessoActivity::class.java))
                         finish()
                     }
                 }

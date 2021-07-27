@@ -13,6 +13,15 @@ class UsuarioRepository(database: AgendaDatabase): UsuarioDataSource {
         return usuarioDao.usuarioByEmail(email)
     }
 
+    override fun usuarioByEmailESenha(email: String, senha: String): LiveData<Usuario> {
+        return usuarioDao.usuarioByEmailESenha(email, senha)
+    }
+
+    override fun getUsuarioById(id: Long): LiveData<Usuario> {
+        usuario = usuarioDao.getUsuarioById(id)
+        return usuario
+    }
+
     override fun save(obj: Usuario): Long {
         return if (obj.id == 0L){
             insert(obj)

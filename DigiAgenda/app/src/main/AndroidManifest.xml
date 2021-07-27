@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DigiAgenda">
+        <activity android:name=".ui.menu.EventosMesActivity"/>
+        <activity android:name=".ui.menu.ConvitesActivity" />
+        <activity android:name=".ui.menu.MinhasInformacoesActivity" />
         <activity
             android:name=".ui.splashs.SplashEntradaActivity"
             android:theme="@style/NoActionBar">
@@ -18,21 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".ui.home.HomeActivity" />
-
         <activity
             android:name=".ui.splashs.SplashSucessoActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
-
         <activity
             android:name=".ui.usuario.LoginActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
-
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity
             android:name=".ui.usuario.CadastroUsuarioActivity"
             android:parentActivityName=".ui.usuario.LoginActivity" />
-
         <activity android:name=".ui.cadastro_evento.CadastrarEventoActivity" />
     </application>
 
