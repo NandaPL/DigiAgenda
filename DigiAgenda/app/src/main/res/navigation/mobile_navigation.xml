@@ -2,13 +2,18 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/lista_eventos"
+    app:startDestination="@+id/ic_eventos"
     android:id="@+id/mobile_navigation">
 
     <fragment
-        android:id="@+id/lista_eventos"
+        android:id="@+id/ic_eventos"
         android:name="com.example.digiagenda.ui.fragments.HomeFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="taskfilter"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 
 </navigation>

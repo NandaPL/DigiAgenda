@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.home.HomeActivity"
-            android:theme="@style/NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ui.splashs.SplashSucessoActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />

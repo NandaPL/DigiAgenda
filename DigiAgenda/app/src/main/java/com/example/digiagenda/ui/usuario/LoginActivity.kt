@@ -74,6 +74,7 @@ class LoginActivity : AppCompatActivity() {
         editor.apply()
 
         startActivity(Intent(this, HomeActivity::class.java)
+            .putExtra("EXTRA_EMAIL", email)
             .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
         finish()
